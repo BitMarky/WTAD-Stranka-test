@@ -1,0 +1,1 @@
+# WTAD-Stranka-test
