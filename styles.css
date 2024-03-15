@@ -1,9 +1,16 @@
+/* Color Variables */
+:root {
+    --primary-color: #ffcc00; /* Yellow */
+    --secondary-color: #333; /* Dark Gray */
+    --accent-color: #ddaa00; /* Darker Yellow */
+}
+
 /* General Styles */
 body {
     font-family: 'Arial', sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #1f1f1f;
+    background-color: var(--secondary-color);
     color: #fff;
 }
 
@@ -15,7 +22,7 @@ body {
 
 /* Header Styles */
 header {
-    background-color: #111;
+    background-color: var(--secondary-color);
     padding: 20px 0;
 }
 
@@ -43,7 +50,7 @@ nav ul li a {
 }
 
 nav ul li a:hover {
-    color: #ffcc00; /* Yellow */
+    color: var(--primary-color);
 }
 
 /* Hero Section Styles */
@@ -69,7 +76,7 @@ nav ul li a:hover {
 .cta-button {
     display: inline-block;
     padding: 10px 20px;
-    background-color: #ffcc00; /* Yellow */
+    background-color: var(--primary-color);
     color: #111;
     text-decoration: none;
     font-size: 18px;
@@ -78,7 +85,7 @@ nav ul li a:hover {
 }
 
 .cta-button:hover {
-    background-color: #ddaa00; /* Darker yellow */
+    background-color: var(--accent-color);
 }
 
 /* Main Content Section Styles */
@@ -91,7 +98,7 @@ nav ul li a:hover {
 
 .main-content > section {
     flex: 1 1 45%;
-    background-color: #333;
+    background-color: var(--primary-color);
     margin-bottom: 20px;
     border-radius: 5px;
     padding: 20px;
@@ -115,7 +122,7 @@ nav ul li a:hover {
 
 /* Footer Styles */
 footer {
-    background-color: #111;
+    background-color: var(--secondary-color);
     padding: 20px 0;
     text-align: center;
 }
