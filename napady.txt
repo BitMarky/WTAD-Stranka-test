@@ -1,0 +1,42 @@
+1.Home Page:
+
+Introduction to the website and its purpose.
+Eye-catching images of cars or car events to grab visitors' attention.
+Navigation menu linking to other pages (Locations, Organizers, Racing Events, Car Facts, and the additional page).
+Brief overview of what users can find on each page.
+Upcoming events or featured content sections.
+
+2.Locations Page:
+
+List of different car meet locations across Slovakia.
+Details about each location, including address, contact information, and a brief description.
+Google Maps integration to help users find the locations easily.
+Possibly include photos of each location to give users an idea of what to expect.
+
+3.Organizers Page:
+
+Information about the organizers of car meets/events.
+Profiles or bios of key organizers with their photos and roles.
+Contact information for reaching out to organizers or joining the organizing team.
+Testimonials from past participants or sponsors to build credibility.
+
+4.Racing Events Page:
+
+Calendar or list of upcoming racing events.
+Details about each event, including date, time, location, and any entry requirements.
+Registration or ticket purchase options if applicable.
+Results and photos from past events to showcase the excitement.
+
+5.Car Facts Page:
+
+Interesting facts about various car makes and models.
+Educational content about car maintenance, performance tuning, or automotive history.
+Infographics or charts displaying comparisons between different car models or technical specifications.
+Links to resources for further reading or learning about cars.
+ 
+6.Additional Page (Suggestions):
+
+Car Reviews: Reviews and ratings of popular car models.
+Community Forum: A space for car enthusiasts to discuss topics related to car meets, racing events, or automotive news.
+DIY (Do-It-Yourself) Guides: Step-by-step guides for car modifications, repairs, or maintenance tasks.
+Photo Gallery: User-submitted photos from car meets and events.
