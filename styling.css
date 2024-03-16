@@ -3,12 +3,8 @@
 
 /* Color Variables */
 :root {
-    --primary-color: #6a1b9a; /* Deep Purple */
-    --secondary-color: #222222; /* Dark Gray */
-    --accent-color: #e74c3c; /* Red */
+    --primary-color: #191919; /* Dark Gray */
     --text-color: #ffffff; /* White */
-    --card-bg-color: #333333; /* Dark Gray */
-    --card-title-color: #ffa726; /* Orange */
 }
 
 /* General Styles */
@@ -16,7 +12,7 @@ body {
     font-family: 'Roboto', sans-serif;
     margin: 0;
     padding: 0;
-    background-color: var(--secondary-color); /* Dark Gray */
+    background-color: var(--primary-color);
     color: var(--text-color);
 }
 
@@ -28,7 +24,7 @@ body {
 
 /* Header Styles */
 header {
-    background-color: var(--primary-color); /* Deep Purple */
+    background-color: var(--primary-color);
     color: var(--text-color);
     padding: 20px 0;
     display: flex;
@@ -63,19 +59,6 @@ nav ul li a:hover {
     color: #bdc3c7; /* Light Gray */
 }
 
-/* Footer Styles */
-footer {
-    background-color: var(--primary-color); /* Deep Purple */
-    padding: 20px 0;
-    text-align: center;
-    color: var(--text-color);
-}
-
-footer p {
-    margin: 0;
-    font-size: 14px;
-}
-
 /* Hero Section Styles */
 .hero {
     background-image: url('hero-background.jpg');
@@ -99,7 +82,7 @@ footer p {
 .cta-button {
     display: inline-block;
     padding: 10px 20px;
-    background-color: var(--accent-color); /* Red */
+    background-color: #e74c3c; /* Red */
     color: var(--text-color);
     text-decoration: none;
     font-size: 18px;
@@ -119,29 +102,49 @@ footer p {
     padding: 20px 0;
 }
 
-.main-content > section {
-    flex: 1 1 30%; /* Adjusted width */
-    background-color: var(--card-bg-color); /* Dark Gray */
+/* About Section Styles */
+.about {
+    flex: 1 1 100%;
+}
+
+/* Features Section Styles */
+.features {
+    flex: 1 1 60%;
+}
+
+.feature-card {
+    background-color: #333; /* Dark Gray */
     margin-bottom: 20px;
     border-radius: 10px;
     padding: 20px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); /* Dark shadow */
+    text-align: center;
+    transition: transform 0.3s ease;
 }
 
-.main-content > section h2 {
-    font-size: 24px;
+.feature-card:hover {
+    transform: translateY(-5px);
+}
+
+.feature-card i {
+    font-size: 48px;
+    color: #e74c3c; /* Red */
     margin-bottom: 20px;
-    color: var(--card-title-color); /* Orange */
 }
 
-.main-content > section p {
+.feature-card h3 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.feature-card p {
     font-size: 18px;
     line-height: 1.5;
 }
 
 /* Footer Styles */
 footer {
-    background-color: var(--primary-color); /* Deep Purple */
+    background-color: var(--primary-color);
     padding: 20px 0;
     text-align: center;
     color: var(--text-color);
