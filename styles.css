@@ -3,12 +3,12 @@
 
 /* Color Variables */
 :root {
-    --primary-color: #6a1b9a; /* Deep Purple */
-    --secondary-color: #222222; /* Dark Gray */
-    --accent-color: #e74c3c; /* Red */
-    --text-color: #ffffff; /* White */
-    --card-bg-color: #333333; /* Dark Gray */
-    --card-title-color: #ffa726; /* Orange */
+    --primary-color: #6a1b9a; 
+    --secondary-color: #222222; 
+    --accent-color: #e74c3c; 
+    --text-color: #ffffff; 
+    --card-bg-color: #333333; 
+    --card-title-color: #ffa726; 
 }
 
 /* General Styles */
@@ -16,9 +16,11 @@ body {
     font-family: 'Roboto', sans-serif;
     margin: 0;
     padding: 0;
-    background-color: var(--secondary-color); /* Dark Gray */
+    background-color: var(--secondary-color); 
     color: var(--text-color);
 }
+
+
 
 .container {
     max-width: 1200px;
@@ -28,7 +30,7 @@ body {
 
 /* Header Styles */
 header {
-    background-color: var(--primary-color); /* Deep Purple */
+    /* background-color: var(--primary-color); Deep Purple */
     color: var(--text-color);
     padding: 20px 0;
     display: flex;
@@ -65,7 +67,7 @@ nav ul li a:hover {
 
 /* Footer Styles */
 footer {
-    background-color: var(--primary-color); /* Deep Purple */
+    background-color: var(--primary-color); 
     padding: 20px 0;
     text-align: center;
     color: var(--text-color);
@@ -78,13 +80,14 @@ footer p {
 
 /* Hero Section Styles */
 .hero {
-    background-image: url('hero-background.jpg');
+    background-image: url('img/hero-backgound.jpg');
     background-size: cover;
     background-position: center;
     text-align: center;
     padding: 100px 0;
     color: var(--text-color);
 }
+
 
 .hero h2 {
     font-size: 48px;
@@ -99,7 +102,7 @@ footer p {
 .cta-button {
     display: inline-block;
     padding: 10px 20px;
-    background-color: var(--accent-color); /* Red */
+    background-color: var( --card-title-color); /* Red */
     color: var(--text-color);
     text-decoration: none;
     font-size: 18px;
@@ -108,7 +111,7 @@ footer p {
 }
 
 .cta-button:hover {
-    background-color: #c0392b; /* Dark Red */
+    background-color: #c0392b; 
 }
 
 /* Main Content Section Styles */
@@ -120,18 +123,72 @@ footer p {
 }
 
 .main-content > section {
-    flex: 1 1 30%; /* Adjusted width */
-    background-color: var(--card-bg-color); /* Dark Gray */
+    flex: 1 1 30%; 
+    background-color: var(--card-bg-color); 
     margin-bottom: 20px;
     border-radius: 10px;
     padding: 20px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); /* Dark shadow */
+    gap: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); 
 }
+section.about {
+    position: relative;
+    background-color: var(--card-bg-color); 
+    margin-bottom: 20px;
+    margin: 20px;
+    border-radius: 10px;
+    padding: 20px;
+    gap: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); 
+}
+
+section.featured-locations {
+    flex: 1 1 30%; 
+    background-color: var(--card-bg-color); 
+    margin-bottom: 20px;
+    margin: 20px;
+    border-radius: 10px;
+    padding: 20px;
+    gap: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); 
+}
+
+.location {
+    flex: 1 1 30%; 
+    background-color: red; 
+    margin-bottom: 20px;
+    margin: 20px;
+    border-radius: 10px;
+    padding: 20px;
+    gap: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); 
+}
+
+.location img {
+    width: 200px;
+    height: 200px;
+}
+
+section.upcoming-events {
+    flex: 1 1 30%; 
+    background-color: var(--card-bg-color); 
+    margin-bottom: 20px;
+    margin: 20px;
+    border-radius: 10px;
+    padding: 20px;
+    gap: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); 
+}
+
+
+
+
+
 
 .main-content > section h2 {
     font-size: 24px;
     margin-bottom: 20px;
-    color: var(--card-title-color); /* Orange */
+    color: var(--card-title-color); 
 }
 
 .main-content > section p {
@@ -141,7 +198,7 @@ footer p {
 
 /* Footer Styles */
 footer {
-    background-color: var(--primary-color); /* Deep Purple */
+    background-color: var(--primary-color); 
     padding: 20px 0;
     text-align: center;
     color: var(--text-color);

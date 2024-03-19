@@ -14,43 +14,193 @@
 body {
     background: var(--background);
     font-family: 'Roboto', sans-serif;
-}
-
-a {
+    color: var(--text);
+    box-sizing: border-box;
     text-decoration: none;
-    color: #fff;
+    scroll-behavior: smooth;
+    overflow-x: hidden;
 }
 
-a:hover {
-    text-decoration: underline;
-}
-li {
-    list-style: none;
-}
-
-img {
-    width: 60px;
-    height: 60px;
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 5vh;
+    
 }
 
-.pill-nav a {
-    display: inline-block;
-    color: black;
-    text-align: center;
-    padding: 14px;
-    text-decoration: none;
-    font-size: 17px;
-    border-radius: 5px;
-  }
-  
-  /* Change the color of links on mouse-over */
-  .pill-nav a:hover {
-    background-color: #ddd;
-    color: black;
-  }
-  
-  /* Add a color to the active/current link */
-  .pill-nav a.active {
-    background-color: dodgerblue;
+header h1 {
+    padding-left: 10px;
+    margin: 0;
+    font-size: 36px;
+}
+
+nav ul {
+    float: left;
+    display: block;
     color: white;
-  }
+    text-align: center;
+    padding: 14px 20px;
+    text-decoration: none;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav ul li a {
+    color: var(--text-color);
+    text-decoration: none;
+    font-size: 18px;
+    
+}
+
+nav ul li a:hover {
+    color: #bdc3c7; /* Light Gray */
+    text-decoration: underline;
+    transition: color 0.3s fade-in;
+}
+
+/* Footer Styles */
+
+footer {
+    background-color: var(--primary-color); /* Deep Purple */
+    padding: 20px 0;
+    text-align: center;
+    color: var(--text-color);
+}
+
+footer p {
+    margin: 0;
+    font-size: 14px;
+}
+
+/* Hero Section Styles */
+
+.hero {
+    background-image: url('/img/hero-backgound.jpg');
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+    padding: 100px 0;
+    color: var(--text-color);
+}
+
+.hero h2 {
+    font-size: 48px;
+    margin-bottom: 20px;
+}
+
+.hero p {
+    font-size: 24px;
+}
+
+.cta-button {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 10px 20px;
+    background: rgb(131,58,180);
+    color: var(--text-color);
+    text-decoration: none;
+    font-size: 18px;
+    border-radius: 20px;
+
+}
+
+.cta-button:hover {
+    background: rgb(148, 62, 206);
+    color: var(--text-color);
+    text-decoration: none;
+    font-size: 18px;
+    border-radius: 20px;
+    transition: background 0.3s ease;
+}
+
+/* About Section Styles */
+
+.about {
+    display: block;
+    padding: 10px 0;
+    color: var(--text-color);
+    text-align: center;
+
+}
+
+.about-container {
+    padding: 50px 10px;
+    text-align: center;
+    color: var(--text-color);
+}
+
+.about-container h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+.about-container p {
+    font-size: 18px;
+}
+
+/*Main content styles*/
+
+.main-content {
+    padding: 100px 0;
+    color: var(--text-color);
+}
+
+.main-content h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+.main-content p {
+    font-size: 18px;
+}
+
+.featured-locations {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    padding: 50px 0;
+    color: var(--text-color);
+}
+
+.featured-locations h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+.featured-locations p {
+    font-size: 18px;
+}
+
+.featured-locations img {
+    width: 300px;
+    height: 300px;
+}
+
+.location-button {
+  background-color: #1a4470;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+}
+
+.location-button:hover {
+    background: rgb(148, 62, 206);
+    color: var(--text-color);
+    text-decoration: none;
+    font-size: 18px;
+    border-radius: 20px;
+    transition: background 0.3s ease;
+}
+
+
+
+
