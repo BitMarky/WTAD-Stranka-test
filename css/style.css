@@ -79,12 +79,12 @@ footer p {
 /* Hero Section Styles */
 
 .hero {
-    background-image: url('/img/hero-backgound.jpg');
+    background-image: url('/img/hero-background.jpg');
     background-size: cover;
     background-position: center;
     text-align: center;
     padding: 100px 0;
-    color: var(--text-color);
+    color: var(--text);
 }
 
 .hero h2 {
@@ -158,48 +158,60 @@ footer p {
     font-size: 18px;
 }
 
-.featured-locations {
+section.featured-locations {
+    padding: 20px 0;
+    color: var(--text-color);
+    text-align: center;
+}
+
+section.featured-locations h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+section.featured-locations p {
+    font-size: 18px;
+}
+
+
+.featured-locations-cards img {
+    width: 300px;
+    height: 300px;
+}
+
+.featured-locations-cards {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: center;
+    gap: 25px;
     align-items: center;
     padding: 50px 0;
     color: var(--text-color);
 }
 
-.featured-locations h2 {
-    font-size: 36px;
-    margin-bottom: 20px;
-}
-
-.featured-locations p {
-    font-size: 18px;
-}
-
-.featured-locations img {
-    width: 300px;
-    height: 300px;
-}
-
-.location-button {
-  background-color: #1a4470;
-  border: none;
-  color: white;
-  padding: 15px 32px;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  font-size: 16px;
-}
-
-.location-button:hover {
-    background: rgb(148, 62, 206);
-    color: var(--text-color);
-    text-decoration: none;
-    font-size: 18px;
+.location {
+    display: flex;
+    flex-direction: column;
+    flex-basis: 300px;
+    max-width: 100%;
+    background-color: #1a4470;
+    box-shadow: 0 5px 10px #1a4470;
     border-radius: 20px;
-    transition: background 0.3s ease;
+    overflow: hidden;
+    margin: 1rem;
 }
+
+.location-img {
+    padding-bottom: 5px;
+    width: 100%;
+}
+
+.location-info {
+    padding: 5px;
+    
+}
+
+
 
 
 
