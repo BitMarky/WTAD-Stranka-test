@@ -79,21 +79,28 @@ footer p {
 /* Hero Section Styles */
 
 .hero {
-    background-image: url('/img/hero-background.jpg');
+    background-image: url('/img/background.jpg');
     background-size: cover;
     background-position: center;
     text-align: center;
     padding: 100px 0;
     color: var(--text);
+    position: relative;
 }
 
 .hero h2 {
     font-size: 48px;
     margin-bottom: 20px;
+    outline: #353535 2px solid;
 }
 
 .hero p {
     font-size: 24px;
+}
+
+.hero ::after {
+    position: absolute;
+    opacity: 0.;
 }
 
 .cta-button {
@@ -209,6 +216,18 @@ section.featured-locations p {
 .location-info {
     padding: 5px;
     
+}
+
+.location-button {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 10px 20px;
+    background: rgb(131,58,180);
+    color: var(--text);
+    text-decoration: none;
+    list-style: none;
+    font-size: 18px;
+    border-radius: 20px;
 }
 
 
