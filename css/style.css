@@ -1,18 +1,14 @@
 
 
 :root {
-  --background: #121212;
-  --primary: #2b5ef7;  /* Neon pink */
+  --background: #1A191DFF;
+  --primary: #6D31ED;  /* Neon pink */
   --secondary: #00a8ff;
+  --button-gradient: linear-gradient(to right top,#15abff, #6d31ed);
   --hover: #0077b6;
-  --text: #dcdde1;
+  --text: #ffffff;
+  --text-dark: #222026ff;
   
-  /* Gradients */
-  --backgound-gradient: linear-gradient(to bottom, #121212, #0d0d0d);
-  --gradient-linear: linear-gradient(to bottom, var(--primary), var(--secondary));
-  --gradient-radial: radial-gradient(circle, var(--primary), var(--secondary));
-  --gradient-diagonal: linear-gradient(to bottom right, var(--primary), var(--hover));
-    /* https://colorhunt.co/palette/ff204ea0153e5d0e4100224d */
 }
 
 * {
@@ -22,7 +18,7 @@
 }
 
 body {
-    background: var(--backgound-gradient);
+    background-color: var(--background);
     font-family: 'Roboto', sans-serif;
     color: var(--text);
     box-sizing: border-box;
@@ -31,28 +27,29 @@ body {
     overflow-x: hidden;
 }
 
+/* Nav */
+
 header {
+    background-color: var(--background);
+    padding: 10px 15px 10px 15px; 
+}
+
+nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    height: 7vh;
-    
 }
 
-header h1 {
-    font-family: 'Mexcellent', sans-serif;
-    padding-left: 10px;
-    margin: 0;
-    font-size: 36px;
+.logo img {
+    width: 35px;
+    height: 35px;
 }
 
 nav ul {
-    float: left;
-    display: block;
-    color: var(--text);
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
     text-align: center;
-    padding: 14px 20px;
-    text-decoration: none;
 }
 
 nav ul li {
@@ -61,17 +58,37 @@ nav ul li {
 }
 
 nav ul li a {
-    color: var(--text);
     text-decoration: none;
+    color: var(--text);
     font-size: 18px;
-    
+    font-weight: 550;
 }
 
 nav ul li a:hover {
     color: var(--hover); /* Light Gray */
-    text-decoration: underline;
-    transition: color 0.3s fade-in;
+    transition: color 0.3s ease;
 }
+
+nav ul li a.active {
+    
+    color: var(--hover);
+  }
+
+.login a {
+    background-image: var(--button-gradient);
+    color: var(--text);
+    text-decoration: none;
+    padding: 10px 20px 10px 20px;
+    border-radius: 50px;
+    transition: padding 0.3s linear;
+  }
+  
+  .login a:hover {
+    color: var(--text);
+    padding: 12px 22px 12px 22px;
+    
+  }
+
 
 /* Footer Styles */
 
@@ -90,13 +107,19 @@ footer p {
 /* Hero Section Styles */
 
 .hero {
-    background-image: url('/img/background.webp');
+    background-image: url('/img/backgound-homepage.png');
+    height: 512px;
     background-size: cover;
     background-position: center;
-    text-align: center;
-    padding: 100px 0;
-    color: var(--text);
+}
+
+.hero-content {
     position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: var(--text);
 }
 
 .hero h2 {
@@ -108,10 +131,6 @@ footer p {
     font-size: 24px;
 }
 
-.hero ::after {
-    position: absolute;
-    opacity: 0.;
-}
 
 .cta-button {
     display: inline-block;
@@ -143,6 +162,36 @@ footer p {
     
 
 }
+
+
+
+.shapedividers_com-9811{
+    overflow:hidden;
+    position:relative;
+    }
+    .shapedividers_com-9811::before{ 
+    content:'';
+    font-family:'shape divider from ShapeDividers.com';
+    position: absolute;
+    z-index: 3;
+    pointer-events: none;
+    background-repeat: no-repeat;
+    bottom: -0.1vw;
+    left: -0.1vw;
+    right: -0.1vw;
+    top: -0.1vw; 
+    background-size: 100% 135px;
+    background-position: 50% 0%; 
+    transform: rotateY(180deg); background-image: url('data:image/svg+xml;charset=utf8, <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 35.28 2.17" preserveAspectRatio="none"><path d="M0 .5c3.07.55 9.27-.42 16.14 0 6.88.4 13.75.57 19.14-.11V0H0z" fill="%23000000"/><path d="M0 1c3.17.8 7.29-.38 10.04-.55 2.75-.17 9.25 1.47 12.67 1.3 3.43-.17 4.65-.84 7.05-.87 2.4-.02 5.52.88 5.52.88V0H0z" opacity=".5" fill="%23000000"/><path d="M0 1.85c2.56-.83 7.68-.3 11.79-.42 4.1-.12 6.86-.61 9.58-.28 2.73.33 5.61 1.17 8.61 1 3-.19 4.73-.82 5.3-.84V.1H0z" opacity=".5" fill="%23000000"/></svg>'); 
+    }
+    
+    @media (min-width:2100px){
+    .shapedividers_com-9811::before{
+    background-size: 100% calc(2vw + 135px);
+    }
+    }
+     
+     
 
 .about-container {
     text-align: center;
