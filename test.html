@@ -3,86 +3,70 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Car Meetup Portal</title>
-    <!-- Bootstrap CSS -->
-    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
-    <!-- Custom CSS -->
+    <title>Car facts</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <!-- Navigation -->
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-        <a class="navbar-brand" href="#">Car Meetup Portal</a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNav">
-            <ul class="navbar-nav">
-                <li class="nav-item active">
-                    <a class="nav-link" href="#">Home</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">Events</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">News</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">Contact</a>
-                </li>
+    <header>
+        <nav>
+          <div class="logo">
+            <a href="#"><img src="img/logo.jpg" alt="Logo"></a>
+          </div>
+          <div class="center-nav">
+            <ul>
+              <li><a href="index.html">Home</a></li>
+              <li><a href="locations.html">Locations</a></li>
+              <li><a href="organizators.html">Organizators</a></li>
+              <li><a href="racing_events.html">Racing Events</a></li>
+              <li><a href="carfacts.html"class="active">Car Facts</a></li>
             </ul>
-        </div>
-    </nav>
+          </div>
+          <div class="login">
+            <a href="#">Login</a>
+          </div>
+        </nav>
+    </header>
+<main>
+    <section class="carsfacts">
+        <h1>Car Facts</h1>
+        <div class="carsfacts-container">
+            <div class=".car-image">
+                <img src="img/vw-golf-2020.png" alt="Car" class="car-image-img">
+            </div>
+            <div class="car-info">
+                <h2>Information</h2>
+                <p>
+                    <ul>
+                        <li>
+                            <strong>Make:</strong>
+                            <span>Volkswagen</span>
+                        </li>
+                        <li>
+                            <strong>Model:</strong>
+                            <span>Golf</span>
+                        </li>
+                        <li>
+                            <strong>Year:</strong>
+                            <span>2020</span>
+                        </li>
+                    </ul>
+                </p>
+            </div>
+            <div class="car-info-text">
+                <h2>Something about the car</h2>
 
-    <!-- Introduction -->
-    <section class="jumbotron text-center bg-dark text-white">
-        <div class="container">
-            <h1 class="jumbotron-heading">Welcome to [Portal Name]</h1>
-            <p class="lead">Discover thrilling racing events, explore unique car meet locations, and connect with fellow enthusiasts passionate about everything automotive.</p>
-            <p>
-                <a href="#" class="btn btn-primary my-2">Join Now</a>
-            </p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa repellat reprehenderit rem corrupti commodi!<br>
+                    Ab a quae quibusdam vero, ad ullam, officia inventore, voluptas consequuntur quas saepe aperiam modi earum.</p>
+            
+                    <a href="#">More info</a> 
+                </div>
+
+            <!-- <div class="more-info">
+               <a href="#">More info</a> 
+            </div> -->
+            
         </div>
     </section>
-
-    <!-- Featured Content -->
-    <div class="container">
-        <div class="row">
-            <div class="col-md-6">
-                <h2>Upcoming Events</h2>
-                <div class="card bg-dark text-white">
-                    <img src="https://via.placeholder.com/150" class="card-img-top" alt="Event Image">
-                    <div class="card-body">
-                        <h5 class="card-title">Event Title</h5>
-                        <p class="card-text">Event description goes here.</p>
-                        <a href="#" class="btn btn-primary">Learn More</a>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-6">
-                <h2>Latest News</h2>
-                <div class="card bg-dark text-white">
-                    <img src="https://via.placeholder.com/150" class="card-img-top" alt="News Image">
-                    <div class="card-body">
-                        <h5 class="card-title">News Title</h5>
-                        <p class="card-text">News update goes here.</p>
-                        <a href="#" class="btn btn-primary">Read More</a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <!-- Footer -->
-    <footer class="footer bg-dark text-white">
-        <div class="container">
-            <span class="text-muted">&copy; 2024 Car Meetup Portal. All rights reserved.</span>
-        </div>
-    </footer>
-
-    <!-- Optional JavaScript -->
-    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.2/dist/js/bootstrap.bundle.min.js"></script>
+</main>
 </body>
-</html>
+</html>   
