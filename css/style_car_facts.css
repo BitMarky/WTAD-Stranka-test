@@ -7,11 +7,13 @@
     --text: #ffffff;
     --text-dark: #222026ff;
 }
+
 * {
     margin: 0;
     padding: 0;
     list-style: none;
 }
+
 body {
     background-color: var(--background);
     font-family: 'Roboto', sans-serif;
@@ -21,7 +23,6 @@ body {
     scroll-behavior: smooth;
     overflow-x: hidden;
 }
-
 
 header {
     background-color: var(--background);
@@ -33,6 +34,7 @@ nav {
     justify-content: space-between;
     align-items: center;
 }
+
 .logo img {
     width: 35px;
     height: 35px;
@@ -63,9 +65,8 @@ nav ul li a:hover {
 }
 
 nav ul li a.active {
-    
     color: var(--hover);
-  }
+}
 
 .login a {
     background-image: var(--button-gradient);
@@ -74,39 +75,93 @@ nav ul li a.active {
     padding: 10px 20px 10px 20px;
     border-radius: 50px;
     transition: padding 0.3s linear;
-  }
-  
-  .login a:hover {
+}
+
+.login a:hover {
     color: var(--text);
     padding: 12px 22px 12px 22px;
-    
-  }
-.main_section{
+}
+
+main {
     display: flex;
-    justify-content: center;
-    align-items: center;
+    flex-direction: column;
+}
+img{
+    border-radius: 75px;
+}
+.row {
+    display: flex;
 }
 
-.type1 img{
+.type2,
+.type4 {
+    margin-left: auto;
+    margin-right: 75px; 
+}
+
+.type1 img,
+.type3 img {
+    margin-left: 75px; 
+}
+
+.type1 img,
+.type2 img,
+.type3 img,
+.type4 img {
     width: 320px;
-    height: 180px;
-    padding: 30px 10px;
+    height: auto;
+    padding: 50px 10px 30px ;
 }
-
-.type2 img{
-    width: 375px;
+.type1 img,
+.type2 img,
+.type3 img,
+.type4 img {
+    margin-left: 75px;
+    z-index: 1;
+}
+.rectangle {
+    position: absolute;
+    left: 0;
+    width: 100%;
+    height: 20px; 
+    background-color: #6D31ED;
+}
+.background-box-1,
+.background-box-2,
+.background-box-3,
+.background-box-4 {
+    position: absolute;
+    top: 80;
+    left: 0;
+    width: 75%;
     height: 200px;
-    padding: 30px 10px;
+    background-color: #6d31ed21;
+    z-index: -1; 
+    margin-top:40px ;
+    border-radius: 50px;
+}
+.background-box-1{
+    height: 200px;
+    
+}
+.background-box-2{
+    height: 190px;
+}
+.background-box-3{
+    height: 235px;
+}
+.background-box-4{
+    height: 235px;
 }
 
-.type3 img{
-    width: 324px;
-    height: 216px;
-    padding: 30px 10px;
-}
-.type4 img{
-    width: 288px;
-    height: 192px;
-    padding: 30px 10px;
+.background-box-1,
+.background-box-3{
+    margin-left: 40px ;
 
 }
+.background-box-2,
+.background-box-4{
+    margin-left: 320px ;
+
+}
+
