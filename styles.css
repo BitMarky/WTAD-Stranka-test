@@ -1,3 +1,5 @@
+
+
 :root {
     --background: #1A191DFF;
     --primary: #6D31ED;  /* Neon pink */
@@ -6,151 +8,260 @@
     --hover: #0077b6;
     --text: #ffffff;
     --text-dark: #222026ff;
-}
-
-* {
-    margin: 0;
-    padding: 0;
-    list-style: none;
-}
-
-body {
-    background-color: var(--background);
-    font-family: 'Roboto', sans-serif;
-    color: var(--text);
-    box-sizing: border-box;
-    text-decoration: none;
-    scroll-behavior: smooth;
-    overflow-x: hidden;
-}
-
-header {
-    background-color: var(--background);
-    padding: 10px 15px 10px 15px; 
-}
-
-nav {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-.logo img {
-    width: 35px;
-    height: 35px;
-}
-
-nav ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    text-align: center;
-}
-
-nav ul li {
-    display: inline;
-    margin-right: 20px;
-}
-
-nav ul li a {
-    text-decoration: none;
-    color: var(--text);
-    font-size: 18px;
-    font-weight: 550;
-}
-
-nav ul li a:hover {
-    color: var(--hover); /* Light Gray */
-    transition: color 0.3s ease;
-}
-
-nav ul li a.active {
-    color: var(--hover);
-}
-
-.login a {
-    background-image: var(--button-gradient);
-    color: var(--text);
-    text-decoration: none;
-    padding: 10px 20px 10px 20px;
-    border-radius: 50px;
-    transition: padding 0.3s linear;
-}
-
-.login a:hover {
-    color: var(--text);
-    padding: 12px 22px 12px 22px;
-}
-
-.carsfacts  h1{
-    font-size: 36px;
-    margin-bottom: 20px;
-    color: var(--text);
-    text-align: center;
-
-}
-
-.carsfacts-container {
-    display: flex;
-    flex-wrap: wrap;
-    margin-top: 25px;
-    margin-bottom: 25px;
-    margin-left: 50px;
-    margin-right: 50px;
-    outline: 2px red dotted;
-}
-
-.car-image-img {
-    max-width: 400px;
-    width: 100%;
-    height: auto;
-}
-
-.car-info {
-    outline: 2px red dotted;
-    padding: 25px;
-}
-
-.car-info h2 {
-    font-size: 24px;
-    margin-bottom: 20px;
-    color: var(--text);
-    text-align: center;
-}
-
-.car-info p {
-    font-size: 18px;
-    margin-bottom: 20px;
-    color: var(--text);
-    text-align: center;
-}
-
-.car-info-text {
-    display: grid;
-    justify-content: space-between;
-    align-items: center;
-}
-
-.car-info-text a{
     
-    justify-content: center;
-    background-image: var(--button-gradient);
-    color: var(--text);
-    text-decoration: none;
-    padding: 10px 20px 10px 20px;
-    border-radius: 50px;
-    transition: padding 0.3s linear;
+  }
+  
+  * {
+      margin: 0;
+      padding: 0;
+      list-style: none;
+  }
+  
+  body {
+      background-color: var(--background);
+      font-family: 'Roboto', sans-serif;
+      color: var(--text);
+      box-sizing: border-box;
+      text-decoration: none;
+      scroll-behavior: smooth;
+      overflow-x: hidden;
+  }
+  
+  /* Nav */
+  
+  header {
+      background-color: var(--background);
+      padding: 10px 15px 10px 15px; 
+  }
+  
+  nav {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+  }
+  
+  .logo img {
+      width: 35px;
+      height: 35px;
+  }
+  
+  nav ul {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+      text-align: center;
+  }
+  
+  nav ul li {
+      display: inline;
+      margin-right: 20px;
+  }
+  
+  nav ul li a {
+      text-decoration: none;
+      color: var(--text);
+      font-size: 18px;
+      font-weight: 550;
+  }
+  
+  nav ul li a:hover {
+      color: var(--hover); /* Light Gray */
+      transition: color 0.3s ease;
+  }
+  
+  nav ul li a.active {
+      
+      color: var(--hover);
+    }
+  
+  .login a {
+      background-image: var(--button-gradient);
+      color: var(--text);
+      text-decoration: none;
+      padding: 10px 20px 10px 20px;
+      border-radius: 50px;
+      transition: padding 0.3s linear;
+    }
     
-    float: right;
-    
-
-}
-
-.car-info-text  h2 {
-    font-size: 24px;
-    margin-bottom: 20px;
-    color: var(--text);
-    text-align: center;
-}
-
-
+    .login a:hover {
+      color: var(--text);
+      padding: 12px 22px 12px 22px;
+      
+    }
+  
+  
+  /* Footer Styles */
+  
+  footer {
+      background-color: var(--secondary); /* Deep Purple */
+      padding: 20px 0;
+      text-align: center;
+      color: var(--text);
+  }
+  
+  footer p {
+      margin: 0;
+      font-size: 14px;
+  }
+  
+  /* Hero Section Styles */
+  
+  .hero {
+      background-image: url('/img/backgound-homepage.png');
+      height: 512px;
+      background-size: cover;
+      background-position: center;
+  }
+  
+  .hero-content {
+      position: relative;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      text-align: center;
+      color: var(--text);
+  }
+  
+  .hero h2 {
+      font-size: 48px;
+      margin-bottom: 20px;
+  }
+  
+  .hero p {
+      font-size: 24px;
+  }
+  
+  
+  .cta-button {
+      display: inline-block;
+      margin-top: 20px;
+      padding: 10px 20px;
+      background: var(--secondary);
+      color: var(--text);
+      text-decoration: none;
+      font-size: 18px;
+      border-radius: 20px;
+  
+  }
+  
+  .cta-button:hover {
+      background: var(--button-gradient);
+      color: var(--text);
+      text-decoration: none;
+      font-size: 18px;
+      border-radius: 20px;
+      transition: background 0.3s ease;
+  }
+  
+  /* About Section Styles */
+  
+  .about {
+      display: block;
+      color: var(--text);
+      text-align: center;
+      
+  
+  }
+  .about-container {
+      text-align: center;
+      color: var(--text);
+      text-align: center;
+      padding: 25px 200px 25px 200px;
+  }
+  
+  .about-container h2 {
+      font-size: 36px;
+      margin-bottom: 20px;
+  }
+  
+  .about-container p {
+      font-size: 18px;
+  }
+  
+  /*Main content styles*/
+  
+  .main-content {
+      padding: 100px 0;
+      color: var(--text);
+  }
+  
+  .main-content h2 {
+      font-size: 36px;
+      margin-bottom: 20px;
+  }
+  
+  .main-content p {
+      font-size: 18px;
+  }
+  
+  section.featured-locations {
+      padding: 20px 0;
+      color: var(--text);
+      text-align: center;
+  }
+  
+  section.featured-locations h2 {
+      font-size: 36px;
+      margin-bottom: 20px;
+  }
+  
+  section.featured-locations p {
+      font-size: 18px;
+  }
+  
+  
+  .featured-locations-cards img {
+      width: 300px;
+      height: 300px;
+  }
+  
+  .featured-locations-cards {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 25px;
+      align-items: center;
+      padding: 50px 0;
+      color: var(--text);
+  }
+  
+  .location {
+      display: flex;
+      flex-direction: column;
+      flex-basis: 300px;
+      max-width: 100%;
+      background-color: var(--primary);
+      box-shadow: 0 5px 10px #1a4470;
+      border-radius: 20px;
+      overflow: hidden;
+      margin: 1rem;
+  }
+  
+  .location-img {
+      padding-bottom: 5px;
+      width: 100%;
+  }
+  
+  .location-info {
+      padding: 5px;
+      
+  }
+  
+  .location-button {
+      display: inline-block;
+      margin-top: 20px;
+      padding: 10px 20px;
+      background: var(--secondary);
+      color: var(--text);
+      text-decoration: none;
+      list-style: none;
+      font-size: 18px;
+      border-radius: 20px;
+  }
+  
+  
+  
+  
+  
+  
+  

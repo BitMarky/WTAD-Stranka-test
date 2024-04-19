@@ -3,70 +3,158 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Car facts</title>
+    <title>Slovak Auto Connect</title>
     <link rel="stylesheet" href="styles.css">
+    <!-- You can add more external stylesheets or scripts here -->
+    <link href="https://fonts.cdnfonts.com/css/mexcellent" rel="stylesheet">
+                
 </head>
 <body>
+
     <header>
         <nav>
-          <div class="logo">
-            <a href="#"><img src="img/logo.jpg" alt="Logo"></a>
-          </div>
-          <div class="center-nav">
+            <div class="logo">
+                <img src="logo.png" alt="Logo">
+            </div>
+            <div class="menu-icon" onclick="toggleMenu()">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT1iqRnppNiiJvKHf3OkMcW0-8BtsCdkjk492aAG9qfzg&s" alt="Menu">
+            </div>
             <ul>
-              <li><a href="index.html">Home</a></li>
-              <li><a href="locations.html">Locations</a></li>
-              <li><a href="organizators.html">Organizators</a></li>
-              <li><a href="racing_events.html">Racing Events</a></li>
-              <li><a href="carfacts.html"class="active">Car Facts</a></li>
+                <li><a href="#" class="active">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">Contact</a></li>
             </ul>
-          </div>
-          <div class="login">
-            <a href="#">Login</a>
-          </div>
+            <div class="login">
+                <a href="#">Login</a>
+            </div>
         </nav>
     </header>
-<main>
-    <section class="carsfacts">
-        <h1>Car Facts</h1>
-        <div class="carsfacts-container">
-            <div class=".car-image">
-                <img src="img/vw-golf-2020.png" alt="Car" class="car-image-img">
-            </div>
-            <div class="car-info">
-                <h2>Information</h2>
-                <p>
-                    <ul>
-                        <li>
-                            <strong>Make:</strong>
-                            <span>Volkswagen</span>
-                        </li>
-                        <li>
-                            <strong>Model:</strong>
-                            <span>Golf</span>
-                        </li>
-                        <li>
-                            <strong>Year:</strong>
-                            <span>2020</span>
-                        </li>
-                    </ul>
-                </p>
-            </div>
-            <div class="car-info-text">
-                <h2>Something about the car</h2>
 
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa repellat reprehenderit rem corrupti commodi!<br>
-                    Ab a quae quibusdam vero, ad ullam, officia inventore, voluptas consequuntur quas saepe aperiam modi earum.</p>
-            
-                    <a href="#">More info</a> 
+    <main>
+        <section class="hero">
+          <div class="hero-content">
+            <h2>TestPage</h2>
+            <p>A place where you can find it all</p>
+            <a href="events.html" class="cta-button">Explore Events</a>
+          </div>
+        </section>
+    
+        <section class="about">
+          <div class="about-container">
+            <h2>About Us</h2>
+            <p>Slovak Auto Connect is the ultimate destination for car enthusiasts in Slovakia and beyond. Our platform connects passionate individuals who share a love for cars, providing a central hub for discovering events, sharing experiences, and connecting with like-minded enthusiasts.</p>
+            <ul>
+                <li>Discover upcoming car meets, races, and events.</li>
+                <li>Connect with fellow enthusiasts and share your passion for cars.</li>
+                <li>Stay informed with the latest news and updates from the automotive world.</li>
+            </ul>
+          </div>
+        </section>
+    
+        <main class="main-content">
+          <section class="about">
+            <h2>About Slovak Auto Connect</h2>
+            <p>Welcome to Slovak Auto Connect, the premier online destination for car enthusiasts, racing aficionados, and automotive aficionados alike. Whether you're passionate about classic cars, high-speed racing, or simply looking to connect with fellow enthusiasts, you've come to the right place.</p>
+            <p>Discover upcoming car meets, races, and events, connect with fellow enthusiasts, and stay informed with the latest news and updates from the automotive world.</p>
+          </section>
+
+        <section class="featured-locations">
+                  <h2>Featured Locations</h2>
+                <div class="featured-locations-cards">
+                  <div class="location">
+                      <div class="location-img">
+                          <img src="img/bratislava.jpg" alt="[Location 1 Name]">
+                      </div>
+                      <div class="location-info">
+                        <p>Location</p>
+                        <p>Time</p>
+                      </div>
+                      <button class="location-button">
+                        <a href="">
+                          More Info
+                        </a>
+                      </button>
+                  </div>
+
+                  <div class="location">
+                    <div class="location-img">
+                        <img src="img/bratislava.jpg" alt="[Location 1 Name]">
+                    </div>
+                    <div class="location-info">
+                      <p>Location</p>
+                      <p>Time</p>
+                    </div>
+                    <button class="location-button">
+                      <a href="">
+                        More Info
+                      </a>
+                    </button>
                 </div>
 
-            <!-- <div class="more-info">
-               <a href="#">More info</a> 
-            </div> -->
+                <div class="location">
+                  <div class="location-img">
+                      <img src="img/bratislava.jpg" alt="[Location 1 Name]">
+                  </div>
+                  <div class="location-info">
+                    <p>Location</p>
+                    <p>Time</p>
+                  </div>
+                  <button class="location-button">
+                    <a href="">
+                      More Info
+                    </a>
+                  </button>
+              </div>
+
+              <div class="location">
+                <div class="location-img">
+                    <img src="img/bratislava.jpg" alt="[Location 1 Name]">
+                </div>
+                <div class="location-info">
+                  <p>Location</p>
+                  <p>Time</p>
+                </div>
+                <button class="location-button">
+                  <a href="">
+                    More Info
+                  </a>
+                </button>
+            </div>
+
+
+                </div>
+            </section>
+
+            <section class="upcoming-events">
+                <h2>Upcoming Races</h2>
+                <div class="race">
+                    <h3>[Race 1 Title]</h3>
+                    <p><strong>Date:</strong> [Date]</p>
+                    <p><strong>Location:</strong> [Location]</p>
+                    <p>[Race 1 Description]</p>
+                </div>
+                <div class="race">
+                    <h3>[Race 2 Title]</h3>
+                    <p><strong>Date:</strong> [Date]</p>
+                    <p><strong>Location:</strong> [Location]</p>
+                    <p>[Race 2 Description]</p>
+                </div>
+            </section>
+        
             
-        </div>
-    </section>
-</main>
+        </main> 
+
+    <footer>
+        <p>&copy; 2024 Slovak Auto Connect. All rights reserved.</p>
+    </footer>
+
+    <script>
+        function toggleMenu() {
+            var navMenu = document.querySelector('nav ul');
+            navMenu.classList.toggle('open');
+        }
+    </script>
+
 </body>
-</html>   
+</html>
