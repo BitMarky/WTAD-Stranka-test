@@ -21,7 +21,7 @@
   
   body {
       background-color: var(--background);
-      font-family: 'Roboto', sans-serif;
+      font-family: "Manrope";
       color: var(--text);
       box-sizing: border-box;
       text-decoration: none;
@@ -34,7 +34,8 @@
   header {
       background-color: var(--background);
       padding: 10px 15px 10px 15px; 
-  }
+      
+  } 
   
   nav {
       display: flex;
@@ -42,6 +43,7 @@
       align-items: center;
       border-bottom: black solid 1px;
       padding: 3px;
+      width: 100%;
   }
   
   .logo img {
@@ -51,66 +53,95 @@
   }
   
   nav ul {
-      list-style-type: none;
-      margin: 0;
-      padding: 0;
-      text-align: center;
-  }
-  
-  nav ul li {
-      display: inline;
-      margin-right: 20px;
-      font-family: "Lexend";
-  }
-  
-  nav ul li a {
-      text-decoration: none;
-      color: var(--text);
-      font-size: 18px;
-      font-weight: 550;
-  }
-  
-  nav ul li a:hover {
-      color: var(--hover); /* Light Gray */
-      transition: color 0.3s ease;
-  }
-  
-  nav ul li a.active {
-      
-      color: var(--hover);
+    list-style-type: none;
+    display: flex;
+    justify-content: center; /* Horizontally center the list items */
+    align-items: center; /* Vertically align the items if needed */
+    padding: 0; /* Remove default padding */
+    margin: 0; /* Remove default margin */
+    text-align: center;
+}
+
+nav ul li {
+    margin: 0 15px;
+    font-family: "Lexend";
+    display: inline-block; /* Changed from inline for better control */
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: var(--text);
+    font-size: 18px;
+    font-weight: 550;
+    position: relative; /* Needed to position the pseudo-element correctly */
+    display: inline-block; /* Ensures the pseudo-element aligns neatly under the link */
+    padding-bottom: 5px;
+    overflow: hidden; /* Ensures the underline does not extend outside the element */
+}
+
+nav ul li a::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 50%; /* Starts from the center */
+    right: 50%;
+    width: 0; /* Start with no width */
+    height: 3px; /* Height of the underline */
+    background-color: var(--hover); /* Color of the underline */
+    border-radius: 3px; /* Rounds the corners of the pseudo border */
+    transition: all 0.3s ease; /* Smooth transition for all changes */
+}
+
+nav ul li a:hover::after {
+    width: 100%; /* Expand to full width */
+    left: 0; /* Start from the very left */
+    right: 0;
+    transform: translateX(0%); /* Reset the transformation on hover */
+}
+
+nav ul li a:hover {
+    color: var(--hover); /* Changes the text color on hover */
+}
+
+nav ul li a.active {
+    color: var(--hover);
+}
+
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction: column; /* Stack the list items vertically */
     }
+
+    nav ul li {
+        margin: 10px 0; /* Adjust margin for vertical stacking */
+    }
+}
   
   .login a {
-      background-image: var(--button-gradient);
-      color: var(--text);
-      text-decoration: none;
-      padding: 10px 20px 10px 20px;
-      border-radius: 50px;
-      transition: padding 0.3s linear;
-      font-family: "Lexend";
-      font-weight: 435;
+    background-image: var(--button-gradient);
+    color: var(--text);
+    text-decoration: none;
+    padding: 10px 20px;
+    border-radius: 50px;
+    transition: background-image 0.3s linear, padding 0.3s linear;
+    display: inline-block;
+    width: auto; /* Adjusted to fit content */
+    font-size: 16px;
+    font-weight: 435;
+    margin: auto 0 6px; /* Adds margin on bottom of the button */
+    cursor: pointer;
+    font-family: "Lexend";
     }
     
     .login a:hover {
-      color: var(--text);
-      padding: 12px 22px 12px 22px;
+        background-image: var(--button-hover-gradient);;
       
     }
   
   
   /* Footer Styles */
   
-  footer {
-      background-color: var(--secondary); /* Deep Purple */
-      padding: 20px 0;
-      text-align: center;
-      color: var(--text);
-  }
-  
-  footer p {
-      margin: 0;
-      font-size: 14px;
-  }
+
   
 /*My Section*/
 
@@ -332,6 +363,8 @@
         color: white; /* For the text color */
         padding: 20px 0; /* Top and bottom padding */
         font-family: 'Manrope', sans-serif; /* Assuming you want to keep your font consistent */
+        margin-left: 20px;
+        margin-right: 20px;
     }
     
     .footer-logo {
@@ -396,6 +429,10 @@
         border-radius: 5px;
     }
     
+    .footer-subscription p{
+        font-size: 13px;
+    }
+
     .footer-subscription button {
         font-family: "Lexend";
         padding: 10px;
