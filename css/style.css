@@ -161,7 +161,7 @@ footer p {
 /* Hero Section Styles */
 
 .hero {
-    background-image: url('/img/backgound-homepage.png');
+    background-image: url('/img/homepage/backgound-homepage.png');
     height: 512px;
     background-size: cover;
     background-position: center;
