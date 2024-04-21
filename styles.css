@@ -1,49 +1,116 @@
-body {
-    background: #000;
-    display: grid;
-   }
-   
-   /* #big_diamond {
-    width: 50%;
-    margin: 15% auto;
-    overflow: hidden;
-    transform: rotate(45deg);
-   } */
 
-   #big_diamond {
-    width: 50%;
-    margin: 15% auto;
-    overflow: hidden;
-    transform: rotate(45deg);
-   }
-   
-   .diamond {
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
     position: relative;
-    float: left;
-    width: 31.33%;
-    padding-bottom: 31.33%;
-    margin: 1%;
-    background: #fff;
-    transition: background-color .4s;
-    overflow: hidden;
-   }
-   
-   .diamond a {
-    position: absolute;
-    top: 0; left: 0;
-    width: 100%; height: 100%;
+    min-height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
-   }
-   
-   .diamond img {
+    background-color: rgba(0, 0, 0, 0.961);
+}
+
+.diamond-grid-layout {
+    position: relative;
+    width: 600px;
+    height: 300px;
+}
+
+img {
     transform: rotate(-45deg);
-        width: 800px;
-        height: 500px;
-   }
-   
-   .diamond:hover {
-    background-color: darkorange;
-   }
+}
+.diamond-item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 200px;
+    width: 200px;
+    background: #ff0000;
+    transition: background-color .4s;
+    overflow: hidden;
+    transform: rotate(45deg);
+    border-radius: 15px;
     
+}
+@media only screen and (min-width: 801px) {
+    .diamond-item {
+        position: absolute;
+        margin: -33px;
+    }
+    .diamond-item1 {
+        left: 0;
+        bottom: 0;
+    }
+    .diamond-item2 {
+        left: 25%;
+    }
+    .diamond-item3 {
+        left: 50%;
+        bottom: 0;
+    }
+    .diamond-item4 {
+        left: 25%;
+        bottom: -55%;
+    }
+}
+
+.diamond-item img {
+    width: 140%;
+    height: 140%;
+    border-radius: 15px;
+    object-fit: cover;
+}
+
+.item-content a{
+    text-decoration: none;
+    color: #fff;
+    font-size: 20px;
+}
+
+
+.diamond-item .item-content {
+    height: 100%;
+    width: 100%;
+    border-radius: 15px;
+    background: #075ea9cc;
+    color: #fff;
+    position: absolute;
+    left: 0;
+    top: 0;
+    transition: all .3s ease-in-out;
+    opacity: 0;
+    visibility: hidden;
+    
+}
+.diamond-item .item-content h4 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform: rotate(315deg);
+    height: 100%;
+    width: 100%;
+    font-size: 26px;
+}
+.diamond-item:hover .item-content {
+    opacity: 1;
+    visibility: visible;
+}
+
+
+@media only screen and (max-width: 800px){
+    .diamond-grid-layout {
+        display: grid;
+        place-content: center;
+    }
+    .diamond-item {
+        width: 180px;
+        height: 180px;
+    }
+}
+
+.diamond-img {
+    transform: rotate(-45deg);
+}
