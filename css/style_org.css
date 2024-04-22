@@ -297,6 +297,7 @@ nav ul li a.active {
   .cards-title-hosts,
   .cards-title-organizers,
   .cards-title-sponsors {
+    text-decoration: none;
     font-family: Lexend; /* Heading */
     font-size: 24px;
     line-height: 36px;
@@ -514,6 +515,7 @@ nav ul li a.active {
     .form-group label{
       display: block;
       margin-bottom: 0.5em;
+      font-family: "Manrope";
     }
 
     .form-group input[type="text"],
@@ -525,6 +527,7 @@ nav ul li a.active {
         margin-bottom: 1rem; /* Adjust this value as needed */
         border: 1px solid #ccc;
         border-radius: 4px;
+        font-family: "Manrope";
     }
   
     .form-container {
@@ -591,17 +594,26 @@ nav ul li a.active {
   
   .submit-button {
       display: block;
-      width: auto;
       margin: 1rem auto;
-      padding: 10px 15px;
-      width: 100%;
+      padding: 10px 20px;
+      width: auto;
       padding: 1rem;
       border: none;
-      background: #333;
-      color: white;
+      background-image: var(--button-gradient);
+      color: var(--text);
       cursor: pointer;
-      border-radius: 5px;
+      border-radius: 50px;
       font-size: 1rem;
+      transition: background-image 0.3s linear, padding 0.3s linear;
+      font-family: "Lexend";
+  }
+
+  .submit-button:hover{
+    background-image: var(--button-hover-gradient);
+  }
+
+  .form-container h1{
+    font-family: "Lexend";
   }
   
   /* Responsive adjustments */
@@ -623,7 +635,149 @@ nav ul li a.active {
   }
   
   
+  .checkbox input[type='checkbox'] {
+    display: none;
+  }
   
+  .checkbox label {
+    position: relative;
+    padding-left: 25px; /* Adjusts spacing between the checkbox and text */
+    cursor: pointer;
+  }
+  
+  .checkbox label::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 15px;
+    height: 15px;
+    border: 1px solid #333;
+    border-radius: 3px;
+    background-color: #f8f9fa;
+  }
+  
+  .checkbox input[type='checkbox']:checked + label::before {
+    background-color: #ff6700;
+    border-color: #ff6700;
+  }
+  
+  .checkbox input[type='checkbox']:checked + label::after {
+    content: '✓';
+    position: absolute;
+    top: 0px; /* Adjusted to align checkmark within the box */
+    left: 3px; /* Adjusted for alignment */
+    font-size: 12px; /* Ensures checkmark is visible */
+    color: #fff;
+  }
+  
+
+  .radio input[type='radio'] {
+    display: none;
+  }
+  
+  .radio label {
+    position: relative;
+    padding-left: 25px; /* Adjusts spacing */
+    cursor: pointer;
+  }
+  
+  .radio label::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 15px;
+    height: 15px;
+    border: 1px solid #333;
+    border-radius: 50%;
+    background-color: #f8f9fa;
+  }
+  
+  .radio input[type='radio']:checked + label::before {
+    background-color: #ff6700;
+    border-color: #ff6700;
+  }
+  
+  .radio input[type='radio']:checked + label::after {
+    content: '';
+    position: absolute;
+    top: 4px; /* Centers the inner white circle */
+    left: 4px; /* Ensures proper alignment */
+    width: 8px; /* Ensures it's visibly centered */
+    height: 8px;
+    background-color: #fff;
+    border-radius: 50%;
+  }
+
+  /* Blog Styling */
+.blog-post {
+  display: flex;
+  flex-direction: column; /* Stack elements vertically */
+  align-items: center; /* Center elements horizontally */
+  padding: 40px; /* Add padding around the content */
+  background-color: var(--card-bg); /* White background for content */
+  border-radius: 10px; /* Rounded corners for a smoother look */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Add a subtle shadow for depth */
+  margin-left: 250px;
+  margin-right: 250px;
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
+.blog-post h2 {
+  font-size: 36px; /* Large font size for the main title */
+  text-align: center; /* Center align the title */
+  font-weight: bold; /* Bold for emphasis */
+  color: var(--text);
+}
+
+.blog-post img {
+  width: 80%; /* Adjust the width to 80% of the container */
+  border-radius: 10px; /* Rounded corners for the image */
+  margin-bottom: 20px; /* Space below the image */
+}
+
+.category {
+  font-size: 14px; /* Smaller font size for the category */
+  color: var(--text); /* Purple color for the category label */
+  
+  text-align: left; /* Align the category to the left */
+  margin-bottom: 10px; /* Space below the category label */
+  background-image: var(--button-gradient);
+  padding: 6px 10px;
+  border-radius: 18px;
+}
+
+.blog-content {
+  width: 80%; /* Adjust the width to 80% of the container */
+  text-align: justify; /* Justify the text for a clean look */
+  line-height: 1.6; /* Increase line-height for better readability */
+}
+
+.blog-content h3 {
+  font-size: 24px; /* Font size for the main heading */
+  font-weight: bold; /* Bold for emphasis */
+  text-align: left; /* Align text to the left */
+  margin-bottom: 15px; /* Space below the heading */
+  color: var(--text);
+}
+
+.blog-content h4 {
+  font-size: 20px; /* Font size for subheadings */
+  text-align: left; /* Align text to the left */
+  font-weight: bold; /* Bold for emphasis */
+  margin-bottom: 10px; /* Space below the subheading */
+  color: var(--text);
+}
+
+.blog-content p {
+  font-size: 16px; /* Standard font size for body text */
+  color: #666; /* Gray color for readability */
+  text-align: justify; /* Justify text */
+  margin-bottom: 15px; /* Space between paragraphs */
+}
+
 
 
 
