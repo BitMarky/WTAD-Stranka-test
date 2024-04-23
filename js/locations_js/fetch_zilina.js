@@ -1,8 +1,8 @@
 document.addEventListener("DOMContentLoaded", function() {
-    fetch("json/locations_json/locations.json") // Ensure the path is correct
+    fetch("json/locations_json/locations.json")
         .then(response => response.json())
         .then(data => {
-            const zilinaEvent = data.events.find(event => event.location === "Žilina"); // Correct variable name
+            const zilinaEvent = data.events.find(event => event.location === "Žilina"); 
 
             if (zilinaEvent) {
                 document.getElementById("about-zilina").innerHTML = `
@@ -14,10 +14,10 @@ document.addEventListener("DOMContentLoaded", function() {
                     <p>Days: ${zilinaEvent.days.join(", ")}</p>
                 `;
             } else {
-                console.error("Žilina event not found."); // Error handling for undefined event
+                console.error("Žilina event not found."); 
             }
         })
         .catch(error => {
-            console.error("Error fetching JSON data:", error); // General error handling
+            console.error("Error fetching JSON data:", error); 
         });
 });
