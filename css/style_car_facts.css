@@ -43,15 +43,17 @@ nav {
     border-radius: 0;
 }
 
+
 .logo {
-    margin: 5px;
+    padding: 10px;
 }
 
 .logo-img {
-    
     width: 44px;
     height: 44px;
-    border-radius: 0;
+    background-color: rgba(0, 0, 0, 0.6);
+    color: var(--text);
+    border-radius: 50px;
 }
 
 nav ul {
@@ -59,8 +61,6 @@ nav ul {
     margin: 0;
     padding: 0;
     text-align: center;
-    background-color: #000000b9;
-    border-radius: 50px;
     
 }
 
@@ -74,7 +74,7 @@ nav ul li a {
     text-decoration: none;
     color: var(--text);
     text-transform: uppercase;
-    font-size: 10px;
+    font-size: 14px;
     font-family: "Poppins", sans-serif;
     
     
@@ -98,10 +98,10 @@ nav ul li a.active {
     transition: all .5s;
   }
 
-  nav.stroke ul li a {
+.stroke ul li a {
     position: relative;
   }
-  nav.stroke ul li a:after {
+.stroke ul li a:after {
     position: absolute;
     bottom: 0px;
     left: 0;
@@ -113,29 +113,23 @@ nav ul li a.active {
     background: var(--primary);
     height: 1px;
   }
-  nav.stroke ul li a:hover:after {
+.stroke ul li a:hover:after {
     width: 100%;
   }
 
-  nav.stroke ul li a:hover:after {
+.stroke ul li a:hover:after {
     width: 100%;
   }
-
-.login a {
-    background-image: var(--button-gradient);
+.center-nav {
+    padding: 0px 5px 2px 5px;
+    position: absolute;
+    top: 2.5%;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: rgba(0, 0, 0, 0.6);
     color: var(--text);
-    text-decoration: none;
-    padding: 5px 15px 5px 15px;
-    margin-right: 10px;
     border-radius: 50px;
-    transition: padding 0.3s linear;
-  }
-  
-  .login a:hover {
-    color: var(--text);
-    padding: 7px 17px 7px 17px;
-    
-  }
+}
 
 .hero {
     background-image: url('/img/carfacts/merq.jpeg');
@@ -347,13 +341,45 @@ nav ul li a.active {
     height: 100%;
 }
 .background-image{
-    position: absolute;
+    position: fixed;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
-    background-image: url("/img/carfacts/nissan.jpg");
-    background-size: cover;
+    background-image: url("/img/carfacts/maybach.jpg");
+    background-position: center; 
+    z-index: -1; 
+    opacity: 0.2;
+}
+.background-image2{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url("/img/carfacts/mercedes\ G.jpg");
+    background-position: center; 
+    z-index: -1; 
+    opacity: 0.2;
+}
+.background-image3{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url("/img/carfacts/muscle.jpg");
+    background-position: center; 
+    z-index: -1; 
+    opacity: 0.2;
+}
+.background-image4{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url("/img/carfacts/black.jpg");
     background-position: center; 
     z-index: -1; 
     opacity: 0.2;
@@ -376,17 +402,37 @@ nav ul li a.active {
     font-size: 48px;
     margin-bottom: 20px;
 }
+
 .p1-card{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
     background-color: gray;
     border-radius: 8px;
-    overflow: hidden;
-    box-shadow: 0px 1px 2px  rgb(255, 0, 0);
+    box-shadow: 0px 1px 2px  gold;
     margin-left: 15%;
     margin-right: 15%;
+    margin-top: 10px;
+    margin-bottom: 10px;
 }
 
 .p1-card img{
     width: 325px;
     height: auto;
-    margin-bottom: -4px;
+    border-radius: 8px;
 }
+.car_info{
+    width: 100%;
+}
+
+.table {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 98%;
+  }
+  
+  td, th {
+    text-align: left;
+    padding: 10px;
+  }
