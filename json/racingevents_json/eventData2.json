@@ -1,0 +1,15 @@
+{
+    "name": "Barcelona Grand Prix",
+    "date_time": {
+        "date": {
+            "day": "15",
+            "month": "September"
+        },
+        "time": "2:00 PM"
+    },
+    "location": {
+        "track": "Circuit de Barcelona-Catalunya",
+        "city": "Barcelona"
+    },
+    "description": "Barcelona Grand Prix: Iconic track with thrilling corners and fast straights"
+}

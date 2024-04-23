@@ -5,36 +5,34 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Racing Events | Slovak Auto Connect</title>
     <link rel="stylesheet" href="/css/style_racing_events.css">
+    <link rel="stylesheet" href="/css/navbar.css">
+    <link rel="stylesheet" href="/css/footer.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap" rel="stylesheet">
-
+    
 
 </head>
 <body>
     <header>
-        <!-- NAV -->
-    <nav class="stroke">
-      <div class="logo">
-        <a href="index.html"><img src="img/logo/car-logo.png" alt="Logo" class="logo-img"></a>
-      </div>
-      <div class="center-nav">
-        <ul>
-          <li><a href="index.html" class="active">Home</a></li>
-          <li><a href="locations.html">Locations</a></li>
-          <li><a href="organizators.html">Organizators</a></li>
-          <li><a href="racingevents.html">Racing Events</a></li>
-          <li><a href="carfacts.html">Car Facts</a></li>
-          <!-- Add links to your additional pages here -->
-          <li><a href="test.html">Extra Page</a></li>
-        </ul>
-      </div>
-      <div class="login">
-        <a href="#">Login</a>
-      </div>
-    </nav>
-  </header>
+        <nav class="">
+          <div class="logo">
+            <a href="index.html"><img src="img/logo/car-logo.png" alt="Logo" class="logo-img"></a>
+          </div>
+          <div class="stroke">
+            <div class="center-nav">
+                <ul>
+                  <li><a href="index.html">Home</a></li>
+                  <li><a href="locations.html">Locations</a></li>
+                  <li><a href="organizators.html">Organizators</a></li>
+                  <li><a href="racingevents.html" class="active">Racing Events</a></li>
+                  <li><a href="carfacts.html">Car Facts</a></li>
+                </ul>
+              </div>
+          </div>
+        </nav>
+      </header>
 
   <main>
     <section class="hero">
@@ -51,7 +49,7 @@
           <p>This is your gateway to the electrifying world of motorsport. Feel the rush of adrenaline as drivers conquer corners, drift through turns, and unleash raw power on the track. From the precision of circuit racing to the artistry of drifting and the sheer speed of drag racing, our events promise heart-pounding excitement at every turn. Whether you're a seasoned racer hungry for victory or an enthusiast eager to witness the action, our lineup caters to all levels of passion and skill. Immerse yourself in the thrill of competition, where every race is a test of courage, skill, and determination.</p>
         </div>
       </section>
-
+      
       <section class="events">
         <div class="featured-events">
             <h1>FEATURED EVENTS</h1>
@@ -67,19 +65,19 @@
                         <div class="event-info">
                             <div class="info-item">
                                 <i class="fa fa-solid fa-flag-checkered"></i>
-                                <span>Velocity Challenge</span>
+                                <span id="meno"></span>
                             </div>
                             <div class="info-item">
                                 <i class="fa fa-regular fa-calendar"></i>
-                                <span>June 15th, 10:00 AM,</span>
+                                <span id="date"></span>
                             </div>
                             <div class="info-item">
                                 <i class="fa fa-solid fa-map-pin"></i>
-                                <span>Circuit de Spa-Francorchamps, Belgium</span>
+                                <span id="location"></span>
                             </div>
                             <div class="info-item">
                                 <i class="fa fa-solid fa-pencil"></i>
-                                <span>A global race series featuring diverse tracks and intense competition for the ultimate win.</span>
+                                <span id="description"></span>
                             </div>
                         </div>
                         
@@ -165,55 +163,107 @@
             <div class="grid-categories">
                 <div class="diamond-grid-layout">
                     <div class="diamond-item diamond-item1">
-                        <img src="/img/carfacts/mclaren 765 .jpg" alt="">
+                        <img src="img/racingevents/diamond-road.jpg" alt="">
                         <div class="item-content">
-                            <a href="index.html"><h4>Road Racing</h4></a>
+                            <a href="racingevents_road.html"><h4>ROAD RACING</h4></a>
                         </div>
                     </div>
                 
                     <div class="diamond-item diamond-item2">
-                        <img src="/img/carfacts/supra.jpg" alt="">
+                        <img src="/img/racingevents/diamond-drift.jpg" alt="">
                         <div class="item-content">
-                            <h4>Diamond Two</h4>
+                            <a href="racingevents_drift.html"><h4>DRIFT</h4></a>
                 
                         </div>
                     </div>
                 
                     <div class="diamond-item diamond-item3">
-                        <img src="/img/carfacts/nissan.jpg" alt="">
+                        <img src="/img/racingevents/diamond-ralley.jpg" alt="">
                         <div class="item-content">
-                            <h4>Diamond Three</h4>
+                            <a href="racingevents_ralley.html"><h4>RALLEY</h4></a>
                         </div>
                     </div>
                 
                     <div class="diamond-item diamond-item4">
-                        <img src="/img/carfacts/vw-golf-2020.png" alt="">
+                        <img src="/img/racingevents/diamond-drag.jpg" alt="">
                         <div class="item-content">
-                            <h4>Diamond Four</h4>
+                            <a href="racingevents_drag.html"><h4>DRAG</h4></a>
                         </div>
                     </div>
                 </div>
             </div>
-
-            <div class="racingcategories-text">
-                <p>Racing is like a big family with different personalities. Circuit racing, think Formula 1 or NASCAR, is all about strategy and finesse, navigating tight corners and high-speed straights. Drifting, inspired by Tokyo street scenes, is like a dance on wheels, sliding sideways with style and precision. Drag racing, well, it's the ultimate showdown of pure power and acceleration, a straight-line sprint where every millisecond counts. And then there's amateur racing, where everyday folks like you and me get to feel the rush of competition on local tracks, bonding over a shared love for speed and adrenaline. It's a vibrant tapestry of passion, skill, and camaraderie, where everyone finds their own slice of racing heaven.</p>
-            </div>
         </div>
     </section>
 
-    <footer>
-        <div class="footer-content">
-           <div class="logo">
-             <img src="img/logo/car-logo.png" alt="Your Brand Logo">
-             <p>&#169; Slovak Auto Connect</p>
-           </div>
 
+    <footer>
+        <div class="footer-container">
+            <div class="footer-content">
+                <div class="copyright">
+                    <p>&copy;Slovak Auto Connect</p>                    
+                </div>
+
+                <div class="footer-links2">
+                    <ul>
+                        <li><a href="racingevents_road.html">Road Racing</a></li>
+                        <li><a href="racingevents_drift.html">Drift</a></li>
+                        <li><a href="racingevents_ralley.html">Ralley</a></li>
+                        <li><a href="racingevents_drag.html">Drag</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-links">
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="organizators.html">Organizators</a></li>
+                        <li><a href="locations.html">Locations</a></li>
+                        <li><a href="racingevents.html">Racing events</a></li>
+                        <li><a href="carfacts.html">Car facts</a></li>
+                    </ul>
+                </div>
+                <br>
+
+            </div>
         </div>
-       </footer>
+    </footer>
+
        
     
   </main>
 
+
+  <script>
+    var eventData = {
+        "name": "Monaco Marvel Rally Challenge",
+        "date_time": {
+            "date": {
+                "day": "10",
+                "month": "August"
+            },
+            "time": "12:00 PM"
+        },
+        "location": {
+            "track": "Rally Monaco Circuit",
+            "city": "Monaco"
+        },
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas in ligula ut metus elementum tincidunt. "
+    };
+
+    function formatDate(date) {
+        return date.day + " " + date.month;
+    }
+
+    function populateEventInfo(data) {
+        console.log("Populating event information...");
+        document.getElementById('meno').innerText = data.name;
+        var dateElement = document.getElementById('date');
+        dateElement.innerText = formatDate(data.date_time.date) + " at " + data.date_time.time;
+        document.getElementById('location').innerText = data.location.track + ", " + data.location.city;
+        document.getElementById('description').innerText = data.description;
+    }
+
+    populateEventInfo(eventData);
+</script>
 
 
 </body>

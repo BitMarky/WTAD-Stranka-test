@@ -1,0 +1,61 @@
+{
+    "series_name": "Extreme Rally Challenge",
+    "events": [
+      {
+        "name": "Monaco Marvel Rally Challenge",
+        "location": "Monaco",
+        "date": "August 10",
+        "time": "12:45",
+        "circuit": {
+          "track": "Rally Monaco Circuit",
+          "city": "Monaco"
+        },
+        "fun_fact": "Rally Monaco Circuit: High-speed gravel stages, epic jumps."
+      },
+      {
+        "name": "Swedish Snowstorm Rally Challenge",
+        "location": "Sweden",
+        "date": "June 30",
+        "time": "11:30",
+        "circuit": {
+          "track": "Swedish Rally Circuit",
+          "city": "Sweden"
+        },
+        "fun_fact": "Swedish Rally Circuit: Frozen forests provide a challenging, picturesque route."
+      },
+      {
+        "name": "New Zealand Nature Rally Challenge",
+        "location": "New Zealand",
+        "date": "November 18",
+        "time": "10:00",
+        "circuit": {
+          "track": "NZ Rally Circuit",
+          "city": "New Zealand"
+        },
+        "fun_fact": "NZ Rally Circuit: Stunning landscapes, unpredictable weather, and technical stages."
+      },
+      {
+        "name": "Arizona Adventure Rally Challenge",
+        "location": "Arizona",
+        "date": "October 20",
+        "time": "14:15",
+        "circuit": {
+          "track": "Arizona Rally Circuit",
+          "city": "Arizona"
+        },
+        "fun_fact": "Arizona Rally Circuit: Red desert sands and rugged terrain test drivers' skills."
+      },
+      {
+        "name": "Japan Jungle Rally Challenge",
+        "location": "Japan",
+        "date": "December 5",
+        "time": "13:00",
+        "circuit": {
+          "track": "Japanese Rally Circuit",
+          "city": "Japan"
+        },
+        "fun_fact": "Japanese Rally Circuit: Dense forests and tight corners make for an intense race."
+      }
+    ]
+  }
+  

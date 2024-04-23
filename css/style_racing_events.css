@@ -5,7 +5,7 @@
 
 :root {
   --background: #1A191DFF;
-  --primary: #6D31ED;  /* Neon pink */
+  --primary: #a91eff;  /* Neon pink */
   --secondary: #00a8ff;
   --button-gradient: linear-gradient(to right top,#15abff, #6d31ed);
   --hover: #7b42f6;
@@ -35,138 +35,23 @@ body {
 
 /* Nav */
 
-header {
-    background-color: var(--background);
-    /* padding: 10px 15px 10px 15px;  */
-    height: 0px;
-}
-
-nav {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    border-radius: 0;
-}
-
-/* .logo img {
-    width: 30px;
-    height: 30px;
-} */
-
-.logo {
-    margin: 5px;
-}
-
-.logo-img {
-    
-    width: 75px;
-    height: 75px;
-    border-radius: 0;
-}
-
-nav ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    text-align: center;
-    background-color: #000000b9;
-    border-radius: 50px;
-    
-}
-
-nav ul li {
-    display: inline-block;
-    padding: 5px;
-    
-}
-
-nav ul li a {
-    text-decoration: none;
-    color: var(--text);
-    text-transform: uppercase;
-    font-size: 20px;
-    font-family: "Poppins", sans-serif;
-    
-    
-}
-
-nav ul li a:hover {
-    color: var(--hover); /* Light Gray */
-    transition: color 0.3s ease;
-}
-
-nav ul li a.active {
-    color: var(--primary);
-    
-    
-  }
-
-  
-  nav ul li a,
-  nav ul li a:after,
-  nav ul li a:before {
-    transition: all .5s;
-  }
-
-  nav.stroke ul li a {
-    position: relative;
-  }
-  nav.stroke ul li a:after {
+.center-nav {
+    padding: 0px 5px 2px 5px;
     position: absolute;
-    bottom: 0px;
-    left: 0;
-    right: 0;
-    margin: auto;
-    width: 0%; /* Show full width */
-    content: '.';
-    color: transparent;
-    background: var(--primary);
-    height: 1px;
-  }
-  nav.stroke ul li a:hover:after {
-    width: 100%;
-  }
-
-  nav.stroke ul li a:hover:after {
-    width: 100%;
-  }
-
-.login a {
-    background-image: var(--button-gradient);
+    top: 2.5%;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: rgba(0, 0, 0, 0.6);
     color: var(--text);
-    text-decoration: none;
-    padding: 5px 15px 5px 15px;
-    margin-right: 10px;
     border-radius: 50px;
-    transition: padding 0.3s linear;
-  }
-  
-  .login a:hover {
-    color: var(--text);
-    padding: 7px 17px 7px 17px;
-    
-  }
-
-
-
-/* Footer Styles */
-
-footer {
-    background-color: var(--secondary); /* Deep Purple */
-    padding: 20px 0;
-    text-align: center;
-    color: var(--text);
 }
 
-footer p {
-    margin: 0;
-    font-size: 14px;
-}
+
 
 /* Hero Section Styles */
 
 .hero {
-    background-image: url('/img/racingevents/racingevents-hero.jpeg');
+    background-image: url('/img/racingevents/racingevents-hero.jpg');
     height: 512px;
     background-size: cover;
     background-position: center;
@@ -181,7 +66,7 @@ footer p {
     color: var(--text);
 }
 
-.hero h2 {
+.hero h1 {
     font-size: 48px;
     margin-bottom: 20px;
 }
@@ -241,12 +126,16 @@ footer p {
 
 /*WELCOME*/
 
-.welcome {
+/* .welcome {
 
-}
+} */
 
-.welcome-container {
-    height: 15vh;
+.welcome-container { 
+    display: flexbox;
+    justify-content: center;
+    align-items: center;
+    margin: 25px 50px 25px 50px;
+
 }
 
 .welcome-container h1 {
@@ -257,11 +146,12 @@ footer p {
 
 .welcome-container p {
     font-size: 14px;
+    padding: 0px 120px 0px 120px;
 }
 
 /* EVENTS */
 .events {
-    background: linear-gradient(to bottom right, rgba(0, 0, 255, 0.239), rgba(255, 192, 203, 0.149))
+    background: linear-gradient(to bottom right, rgba(0, 0, 255, 0.4), rgba(255, 192, 203, 0.35));
 }
 
 .featured-events h1{
@@ -362,6 +252,7 @@ footer p {
 
 /* RACING SERIES */
 .racingcategories-container {
+    background: linear-gradient(to bottom left, rgba(32, 32, 32, 0.4), rgba(1, 1, 1, 0.446));
     padding:75px 75px 750px 75px;
 
 }
@@ -376,26 +267,29 @@ footer p {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+    align-items: center;
     padding-top: 125px;
     transform: translateX(-25%);
 }
 .diamond-grid-layout {
-
     position: absolute;
-    width: 600px;
-    height: 300px;
+    width: 800px;
+    height: 500px;
+    top: 50%;
+    left: 60%;
 }
 
 .diamond-grid-layout img {
     transform: rotate(-45deg);
+
 }
 .diamond-item {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 200px;
-    width: 200px;
-    background: #ff0000;
+    height: 250px;
+    width: 250px;
+    background: var(--primary);
     transition: background-color .4s;
     overflow: hidden;
     transform: rotate(45deg);
@@ -405,7 +299,7 @@ footer p {
 @media only screen and (min-width: 801px) {
     .diamond-item {
         position: absolute;
-        margin: -33px;
+        margin: -30px;
     }
     .diamond-item1 {
         left: 0;
@@ -420,13 +314,21 @@ footer p {
     }
     .diamond-item4 {
         left: 25%;
-        bottom: -55%;
+        bottom: -50%;
+    }
+    .diamond-grid-layout {
+        position: absolute;
+        width: 800px;
+        height: 400px;
+        top: 50%;
+        left: 56%;
+        
     }
 }
 
 .diamond-item img {
-    width: 140%;
-    height: 140%;
+    width: 136%;
+    height: 136%;
     border-radius: 15px;
     object-fit: cover;
 }
@@ -460,6 +362,7 @@ footer p {
     height: 100%;
     width: 100%;
     font-size: 26px;
+    
 }
 .diamond-item:hover .item-content {
     opacity: 1;
@@ -502,16 +405,150 @@ footer p {
     margin-bottom: 20px;
 }
 
-footer {
-    background-color: #333;
-    color: #fff;
-    padding: 50px;
+/* General Footer Styling */
 
-   }
-footer img{
-    width: 75px;
-    float: left;
-}
+/*Road Racing page*/
+
+/*TimeLine*/
+* {
+    box-sizing: border-box;
+  }
+  
+  body {
+    background-color: #474e5d;
+    font-family: Helvetica, sans-serif;
+  }
+  
+  /* The actual timeline (the vertical ruler) */
+  .timeline {
+    position: relative;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  /* The actual timeline (the vertical ruler) */
+  .timeline::after {
+    content: '';
+    position: absolute;
+    width: 6px;
+    background-color: white;
+    top: 0;
+    bottom: 0;
+    left: 50%;
+    margin-left: -3px;
+  }
+  
+  /* Container around content */
+  .container {
+    padding: 10px 40px;
+    position: relative;
+    background-color: inherit;
+    width: 50%;
+  }
+  
+  /* The circles on the timeline */
+  .container::after {
+    content: '';
+    position: absolute;
+    width: 25px;
+    height: 25px;
+    right: -17px;
+    background-color: white;
+    border: 4px solid #FF9F55;
+    top: 70px;
+    border-radius: 50%;
+    z-index: 1;
+  }
+  
+  /* Place the container to the left */
+  .left {
+    left: 0;
+  }
+  
+  /* Place the container to the right */
+  .right {
+    left: 50%;
+  }
+  
+  /* Add arrows to the left container (pointing right) */
+  .left::before {
+    content: " ";
+    height: 0;
+    position: absolute;
+    top: 77px;
+    width: 0;
+    z-index: 1;
+    right: 30px;
+    border: medium solid white;
+    border-width: 10px 0 10px 10px;
+    border-color: transparent transparent transparent white;
+  }
+  
+  /* Add arrows to the right container (pointing left) */
+  .right::before {
+    content: " ";
+    height: 0;
+    position: absolute;
+    top: 77px;
+    width: 0;
+    z-index: 1;
+    left: 30px;
+    border: medium solid white;
+    border-width: 10px 10px 10px 0;
+    border-color: transparent white transparent transparent;
+  }
+  
+  /* Fix the circle for containers on the right side */
+  .right::after {
+    left: -16px;
+  }
+  
+  /* The actual content */
+  .content {
+    padding: 20px 30px;
+
+    position: relative;
+    border-radius: 6px;
+  }
+  
+  /* Media queries - Responsive timeline on screens less than 600px wide */
+  @media screen and (max-width: 600px) {
+    /* Place the timelime to the left */
+    .timeline::after {
+    left: 31px;
+    }
+    
+    /* Full-width containers */
+    .container {
+    width: 100%;
+    padding-left: 70px;
+    padding-right: 25px;
+    }
+    
+    /* Make sure that all arrows are pointing leftwards */
+    .container::before {
+    left: 60px;
+    border: medium solid white;
+    border-width: 10px 10px 10px 0;
+    border-color: transparent white transparent transparent;
+    }
+  
+    /* Make sure all circles are at the same spot */
+    .left::after, .right::after {
+    left: 15px;
+    }
+    
+    /* Make all right containers behave like the left ones */
+    .right {
+    left: 0%;
+    }
+  }
+   
+
+
+
+
+
    
 
    

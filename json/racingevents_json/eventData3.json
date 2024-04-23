@@ -1,0 +1,15 @@
+{
+    "name": "Silverstone Circuit Challenge",
+    "date_time": {
+        "date": {
+            "day": "20",
+            "month": "October"
+        },
+        "time": "3:30 PM"
+    },
+    "location": {
+        "track": "Silverstone Circuit",
+        "city": "Northamptonshire"
+    },
+    "description": "Silverstone Circuit Challenge: Historic track with a mix of high-speed corners and technical sections"
+}

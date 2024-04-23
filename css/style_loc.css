@@ -1,0 +1,132 @@
+
+html, body {
+    height: 100%; /* Full height for the page */
+    margin: 0; /* No default margins */
+    display: flex;
+    flex-direction: column; /* Column direction for flex */
+  }
+  
+  main {
+    flex: 1; /* Ensures the main content expands to fill the space */
+  }
+  
+  footer {
+    text-align: center; /* Center text in footer */
+    padding: 10px; /* Padding for spacing */
+    background-color: #333; /* Background color */
+    color: white; /* Text color */
+  }
+  
+  .card-row {
+    display: flex; /* Flex layout for horizontal alignment */
+    flex-direction: row; /* Place cards in a row */
+    justify-content: space-around; /* Space between cards */
+    align-items: flex-start; /* Align items at the start */
+    gap: 20px; /* Spacing between cards */
+    margin: 0 auto 80px; /* Center the card row with margin */
+    margin-top: 20px;
+    max-width: 1200px; /* Maximum width for the card row */
+  }
+  
+  .card {
+    background-color: #333; /* Light background for the card */
+    border: 1px solid #ccc; /* Border for the card */
+    border-radius: 10px; /* Rounded corners */
+    padding: 10px; /* Padding within the card */
+    text-align: center; /* Center text in the card */
+    width: 300px; /* Fixed width */
+    height: 200px; /* Fixed height */
+    color: inherit; 
+    text-decoration: none;
+    
+  }
+  
+  .logo{
+    z-index: 10;
+  }
+
+  .card img {
+    width: 100%; /* Full width of the card */
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 10px; /* Rounded corners for image */
+    margin-bottom: 10px; /* Space between image and other content */
+  }
+
+  .hero{
+    background-image: url('/img/locations/bad-bleiberg-region-villach-tourismus-gmbh-arthur-mrsel.jpg');
+    height: 512px;
+    background-size: cover;
+    background-position: center;
+  }
+
+  .hero-content {
+    display: inline-block; /* or inline-flex */
+    background-color: black; /* Dark gray background for text */
+    padding: 5px 10px; /* Add padding for better readability */
+    border-radius: 5px; /* Slightly rounded corners for aesthetics */
+    border-radius: 12px;
+    opacity: 0.8;
+}
+
+.hero-content h1, .hero-content p {
+    color: white; /* Ensures text is visible against the dark background */
+}
+
+.content {
+  padding: 20px; /* Add some padding around the content */
+}
+
+#contact-form {
+  max-width: 600px; /* Limit the form's width */
+  margin: 0 auto; /* Center the form horizontally */
+  background: #f7f7f7; /* Light background for the form */
+  padding: 20px; /* Add padding inside the form */
+  border-radius: 10px; /* Rounded corners */
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1); /* Soft shadow */
+}
+
+label {
+  font-weight: bold; /* Bold text for labels */
+  display: block; /* Each label on a new line */
+  margin-bottom: 10px; /* Space between label and input */
+}
+
+input, textarea {
+  width: 100%; /* Full width for inputs */
+  padding: 10px; /* Padding for a comfortable input */
+  padding-left: 0px;
+  border: 1px solid #ccc; /* Light border */
+  border-radius: 5px; /* Rounded corners */
+  box-shadow: inset 0 2px 5px rgba(0, 0, 0, 0.1); /* Inset shadow */
+  margin-bottom: 20px; /* Space between inputs */
+}
+
+button {
+  background: #333; /* Dark background for button */
+  color: white; /* White text */
+  padding: 10px 20px; /* Padding for button */
+  border: none; /* No border */
+  border-radius: 5px; /* Rounded corners */
+  cursor: pointer; /* Pointer cursor */
+  transition: background 0.3s; /* Smooth transition on hover */
+}
+
+button:hover {
+  background: #555; /* Darker on hover */
+}
+
+.contact-button {
+  display: inline-block; /* Ensures the button maintains its block behavior */
+  background: #333; /* Dark background */
+  color: white; /* White text for contrast */
+  padding: 10px 20px; /* Spacing around the button */
+  border-radius: 5px; /* Slightly rounded corners */
+  text-decoration: none; /* No underlines */
+  font-weight: bold; /* Bold text */
+  transition: background 0.3s; /* Smooth hover effect */
+ 
+}
+
+.contact-button:hover {
+  background: #555; /* Darker shade on hover */
+}

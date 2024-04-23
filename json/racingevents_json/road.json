@@ -1,0 +1,61 @@
+{
+    "series_name": "Grand Prix Circuit",
+    "events": [
+      {
+        "name": "Monaco Majesty Grand Prix",
+        "location": "Monaco",
+        "date": "June 15",
+        "time": "10:10",
+        "circuit": {
+          "track": "Circuit de Monaco",
+          "city": "Monaco"
+        },
+        "fun_fact": "Monaco Grand Prix: A historic, prestigious race since 1929."
+      },
+      {
+        "name": "Barcelona Battle Grand Prix",
+        "location": "Barcelona",
+        "date": "May 10",
+        "time": "14:20",
+        "circuit": {
+          "track": "Circuit de Barcelona-Catalunya",
+          "city": "Barcelona"
+        },
+        "fun_fact": "Barcelona Grand Prix: Host to thrilling battles on the Spanish track."
+      },
+      {
+        "name": "Silverstone Speedster Grand Prix",
+        "location": "Silverstone",
+        "date": "April 5",
+        "time": "13:00",
+        "circuit": {
+          "track": "Silverstone Circuit",
+          "city": "Silverstone"
+        },
+        "fun_fact": "Silverstone: Birthplace of British motorsport, with legendary corners."
+      },
+      {
+        "name": "Monte Carlo Madness Grand Prix",
+        "location": "Monte Carlo",
+        "date": "July 25",
+        "time": "11:45",
+        "circuit": {
+          "track": "Monaco Historic Circuit",
+          "city": "Monaco"
+        },
+        "fun_fact": "Monte Carlo Street Circuit: Prestige and glamour meet in the heart of Monaco."
+      },
+      {
+        "name": "Monza Magic Grand Prix",
+        "location": "Monza",
+        "date": "August 30",
+        "time": "14:00",
+        "circuit": {
+          "track": "Autodromo Nazionale Monza",
+          "city": "Monza"
+        },
+        "fun_fact": "Autodromo Nazionale Monza: Known for its historic banking and thrilling atmosphere."
+      }
+    ]
+  }
+  

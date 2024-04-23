@@ -308,6 +308,37 @@ section.featured-locations p {
     border-radius: 20px;
 }
 
+.car-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 50px;
+}
+
+.card {
+    display: flex;
+    gap: 15px;
+    width: 80%;
+    border-radius: 15px;
+    background-color: #3b3b3b;
+    
+}
+
+.card h3 {
+    font-size: 24px;
+    padding-bottom: 5px;
+    text-align: center;
+}
+
+.car-img{
+    width: 350px;
+}
+
+.car-info {
+    width: 100%;
+    
+}
+
 
 
 
