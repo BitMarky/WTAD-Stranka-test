@@ -219,6 +219,7 @@ nav ul li a.active {
     display: flex;
     align-items: center;
     position: relative;
+    margin: 0 auto;
   }
 
 .nav-button {
@@ -394,7 +395,7 @@ nav ul li a.active {
         color: rgb(171, 167, 180);
     }
 
-
+    
 
     .footer-menu h3 {
         color: rgb(171, 167, 180);
