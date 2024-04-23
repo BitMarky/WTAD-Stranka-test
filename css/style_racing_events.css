@@ -35,107 +35,13 @@ body {
 
 /* Nav */
 
-header {
-    background-color: var(--background);
-    /* padding: 10px 15px 10px 15px;  */
-    height: 0px;
-}
-
-nav {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    border-radius: 0;
-}
-
-/* .logo img {
-    width: 30px;
-    height: 30px;
-} */
-
-.logo {
-    padding: 10px;
-}
-
-.logo-img {
-    width: 44px;
-    height: 44px;
-    background-color: rgba(0, 0, 0, 0.6);
-    color: var(--text);
-    border-radius: 50px;
-}
-
-nav ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    text-align: center;
-    
-}
-
-nav ul li {
-    display: inline-block;
-    padding: 5px;
-    
-}
-
-nav ul li a {
-    text-decoration: none;
-    color: var(--text);
-    text-transform: uppercase;
-    font-size: 14px;
-    font-family: "Poppins", sans-serif;
-    
-    
-}
-
-nav ul li a:hover {
-    color: var(--hover); /* Light Gray */
-    transition: color 0.3s ease;
-}
-
-nav ul li a.active {
-    color: var(--primary);
-    
-    
-  }
-
-  
-  nav ul li a,
-  nav ul li a:after,
-  nav ul li a:before {
-    transition: all .5s;
-  }
-
-.stroke ul li a {
-    position: relative;
-  }
-.stroke ul li a:after {
-    position: absolute;
-    bottom: 0px;
-    left: 0;
-    right: 0;
-    margin: auto;
-    width: 0%; /* Show full width */
-    content: '.';
-    color: transparent;
-    background: var(--primary);
-    height: 1px;
-  }
-.stroke ul li a:hover:after {
-    width: 100%;
-  }
-
-.stroke ul li a:hover:after {
-    width: 100%;
-  }
 .center-nav {
     padding: 0px 5px 2px 5px;
     position: absolute;
     top: 2.5%;
     left: 50%;
     transform: translateX(-50%);
-    /* background-color: rgba(0, 0, 0, 0.6); */
+    background-color: rgba(0, 0, 0, 0.6);
     color: var(--text);
     border-radius: 50px;
 }
@@ -145,7 +51,7 @@ nav ul li a.active {
 /* Hero Section Styles */
 
 .hero {
-    background-image: url('/img/racingevents/racingevents-hero.jpeg');
+    background-image: url('/img/racingevents/racingevents-hero.jpg');
     height: 512px;
     background-size: cover;
     background-position: center;
@@ -160,7 +66,7 @@ nav ul li a.active {
     color: var(--text);
 }
 
-.hero h2 {
+.hero h1 {
     font-size: 48px;
     margin-bottom: 20px;
 }
@@ -220,12 +126,16 @@ nav ul li a.active {
 
 /*WELCOME*/
 
-.welcome {
+/* .welcome {
 
-}
+} */
 
-.welcome-container {
-    height: 15vh;
+.welcome-container { 
+    display: flexbox;
+    justify-content: center;
+    align-items: center;
+    margin: 25px 50px 25px 50px;
+
 }
 
 .welcome-container h1 {
@@ -236,11 +146,12 @@ nav ul li a.active {
 
 .welcome-container p {
     font-size: 14px;
+    padding: 0px 120px 0px 120px;
 }
 
 /* EVENTS */
 .events {
-    background: linear-gradient(to bottom right, rgba(0, 0, 255, 0.239), rgba(255, 192, 203, 0.149))
+    background: linear-gradient(to bottom right, rgba(0, 0, 255, 0.4), rgba(255, 192, 203, 0.35));
 }
 
 .featured-events h1{
@@ -341,6 +252,7 @@ nav ul li a.active {
 
 /* RACING SERIES */
 .racingcategories-container {
+    background: linear-gradient(to bottom left, rgba(32, 32, 32, 0.4), rgba(1, 1, 1, 0.446));
     padding:75px 75px 750px 75px;
 
 }
@@ -355,26 +267,29 @@ nav ul li a.active {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+    align-items: center;
     padding-top: 125px;
     transform: translateX(-25%);
 }
 .diamond-grid-layout {
-
     position: absolute;
-    width: 600px;
-    height: 300px;
+    width: 800px;
+    height: 500px;
+    top: 50%;
+    left: 60%;
 }
 
 .diamond-grid-layout img {
     transform: rotate(-45deg);
+
 }
 .diamond-item {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 200px;
-    width: 200px;
-    background: #ff0000;
+    height: 250px;
+    width: 250px;
+    background: var(--primary);
     transition: background-color .4s;
     overflow: hidden;
     transform: rotate(45deg);
@@ -384,7 +299,7 @@ nav ul li a.active {
 @media only screen and (min-width: 801px) {
     .diamond-item {
         position: absolute;
-        margin: -33px;
+        margin: -30px;
     }
     .diamond-item1 {
         left: 0;
@@ -399,13 +314,21 @@ nav ul li a.active {
     }
     .diamond-item4 {
         left: 25%;
-        bottom: -55%;
+        bottom: -50%;
+    }
+    .diamond-grid-layout {
+        position: absolute;
+        width: 800px;
+        height: 400px;
+        top: 50%;
+        left: 56%;
+        
     }
 }
 
 .diamond-item img {
-    width: 140%;
-    height: 140%;
+    width: 136%;
+    height: 136%;
     border-radius: 15px;
     object-fit: cover;
 }
@@ -439,6 +362,7 @@ nav ul li a.active {
     height: 100%;
     width: 100%;
     font-size: 26px;
+    
 }
 .diamond-item:hover .item-content {
     opacity: 1;
@@ -481,16 +405,13 @@ nav ul li a.active {
     margin-bottom: 20px;
 }
 
-footer {
-    background-color: #333;
-    color: #fff;
-    padding: 50px;
+/* General Footer Styling */
 
-   }
-footer img{
-    width: 75px;
-    float: left;
-}
+
+
+
+
+
    
 
    
