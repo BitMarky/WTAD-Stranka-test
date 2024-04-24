@@ -274,65 +274,28 @@ nav ul li a.active {
   }
 
 
-  .submit {
-    width: 173px; 
-    height: 52px; 
-    padding: 0 20px; 
-    display: flex; 
-    align-items: center; 
-    justify-content: center; 
-    font-family: Manrope; 
-    font-size: 18px; 
-    line-height: 28px; 
-    font-weight: 400; 
-    color: #FFFFFFFF; 
-    background: #6D31EDFF; 
-    opacity: 1; 
-    border: none; 
-    border-radius: 4px; 
-    margin-left: 10px;
-    
-  }
-.textbox-container {
-    display: flex;
-    justify-content: center; 
-    align-items: center;
+  
+.textbox {
+    text-align: center;
+    color: lightgray;
 }
-
-.submit-btn{
-    display: flex;
-    justify-content: center;
-    align-items: center;
+.textbox p{
+    font-size: 24px;
+    margin-bottom: 50px;
 }
-  .textbox{ 
-    input[type="text"],textarea{
-        width: 375px; 
-        height: 45px; 
-        padding-left: 20px; 
-        padding-right: 20px; 
-        font-family: Manrope; 
-        font-size: 18px; 
-        line-height: 28px; 
-        font-weight: 400; 
-        background: #00000000;
-        border-radius: 4px; 
-        border-width: 1px; 
-        border-color: #fff; 
-        outline: none; 
-        color: #FFF;
-        margin-left: 10px;
-        margin-bottom: 10px;
-    }
-  }
-.textbox{
-    label{
-        font-family: Manrope; 
-        font-size: 18px; 
-        line-height: 28px; 
-        font-weight: 700;
-        margin-left: 15px;
-    }
-}   
+.textbox label{
+    display: block;
+    margin: auto; 
+    width: 300px; 
+}
+.textbox select,
+.textbox input {
+    display: block;
+    margin: auto; 
+    width: 300px; 
+    height: 50px;
+    border-radius: 8px;
+}
   .something4-container p{
     text-align: center;
     color: var(--text);
