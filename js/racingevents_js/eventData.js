@@ -1,74 +1,24 @@
-    // JSON data for event card 1
-    var eventData1 = {
-        "name": "Monaco Marvel Rally Challenge",
-        "date_time": {
-            "date": {
-                "day": "10",
-                "month": "August"
-            },
-            "time": "12:00 PM"
-        },
-        "location": {
-            "track": "Rally Monaco Circuit",
-            "city": "Monaco"
-        },
-        "description": "Rally Monaco Circuit: High-speed gravel stages, epic jumps"
-    };
-    
-    // JSON data for event card 2
-    var eventData2 = {
-        "name": "Barcelona Grand Prix",
-        "date_time": {
-            "date": {
-                "day": "15",
-                "month": "September"
-            },
-            "time": "2:00 PM"
-        },
-        "location": {
-            "track": "Circuit de Barcelona-Catalunya",
-            "city": "Barcelona"
-        },
-        "description": "Barcelona Grand Prix: Iconic track with thrilling corners and fast straights"
-    };
-    
-    // JSON data for event card 3
-    var eventData3 = {
-        "name": "Silverstone Circuit Challenge",
-        "date_time": {
-            "date": {
-                "day": "20",
-                "month": "October"
-            },
-            "time": "3:30 PM"
-        },
-        "location": {
-            "track": "Silverstone Circuit",
-            "city": "Northamptonshire"
-        },
-        "description": "Silverstone Circuit Challenge: Historic track with a mix of high-speed corners and technical sections"
-    };
-    
-    // Function to format the date
-    function formatDate(date) {
-        return date.day + " " + date.month;
-    }
-    
-    // Function to populate the event information for a specific card
-    // Function to populate the event information for a specific card
-    function populateEventInfo(data, cardId) {
-        console.log("Populating event information for card:", cardId);
-        var card = document.getElementById(cardId);
-        card.querySelector('#meno' + cardId).innerText = data.name;
-        card.querySelector('#date' + cardId).innerText = formatDate(data.date_time.date) + " at " + data.date_time.time;
-        card.querySelector('#location' + cardId).innerText = data.location.track + ", " + data.location.city;
-        card.querySelector('#description' + cardId).innerText = data.description;
-    }
-    
-    
-    // Populate event data for each card
-    document.addEventListener("DOMContentLoaded", function() {
-        populateEventInfo(eventData1, 'event-card-1');
-        populateEventInfo(eventData2, 'event-card-2');
-        populateEventInfo(eventData3, 'event-card-3');
-    });
+document.addEventListener('DOMContentLoaded', function() {
+    fetch('json/racingevents_json/events.json')
+      .then(response => response.json())
+      .then(data => {
+        const eventCard = document.querySelector('.ralley-event-card');
+        const nameElement = document.getElementById('name');
+        const locationElement = document.getElementById('location');
+        const dateElement = document.getElementById('date');
+        const timeElement = document.getElementById('time');
+        const descriptionElement = document.getElementById('description');
+        const imageElement = document.querySelector('.event-card-img img');
+
+        // Assuming the JSON contains an array of events
+        const event = data[0]; // Adjust this if you want to display multiple events
+
+        nameElement.textContent = event.name;
+        locationElement.textContent = `${event.location.track}, ${event.location.city}`;
+        dateElement.textContent = `${event.date.day} ${event.date.month} ${event.date.year}`;
+        timeElement.textContent = event.time;
+        descriptionElement.textContent = event.description;
+        imageElement.src = event.image;
+      })
+      .catch(error => console.error('Error fetching data:', error));
+});
